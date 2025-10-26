@@ -181,12 +181,24 @@ html, body {
 
 /* DETAILS PAGE */
 .details {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
   background: var(--glass);
   border-radius: 20px;
   box-shadow: var(--shadow);
   padding: 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.image-section,
+.recipe-card {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
@@ -262,6 +274,10 @@ iframe {
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
+  }
+
+  .details {
+    flex-direction: column;
   }
 
   .tab {
