@@ -237,7 +237,7 @@ h1 {
 .tab-content {
   display: none;
   opacity: 0;
-  transition: all 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .tab-content.active-tab {
@@ -268,6 +268,11 @@ iframe {
     font-size: 0.85rem;
     padding: 0.4rem 0.4rem;
   }
+
+  .tab-content {
+    height: auto;
+    overflow: visible;
+  }
 }
 
 @media (max-width: 600px) {
@@ -281,5 +286,13 @@ iframe {
   .tab {
     font-size: 0.65rem;
     padding: 0.25rem 0.25rem;
+  }
+}
+
+/* DESKTOP FIX: LOCK TAB CONTENT HEIGHT */
+@media (min-width: 901px) {
+  .tab-content {
+    height: 300px;
+    overflow-y: auto;
   }
 }
