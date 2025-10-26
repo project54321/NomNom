@@ -218,6 +218,7 @@ h1 {
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
+  font-size: 1rem;
 }
 
 .tab:hover {
@@ -265,9 +266,16 @@ iframe {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .tab {
     font-size: 0.75rem;
     padding: 0.3rem 0.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .tab {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.3rem;
   }
 }
