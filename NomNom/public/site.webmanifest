@@ -1,6 +1,6 @@
 {
-    "name":"",
-    "short_name":"",
+    "name":"NomNom",
+    "short_name":"NomNom",
     "icons":[
             {
                 "src":"/android-chrome-192x192.png",
@@ -15,4 +15,5 @@
     "theme_color":"#fff8f2",
     "background_color":"#fff8f2",
     "display":"standalone"
+
 }
