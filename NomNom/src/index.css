@@ -25,7 +25,6 @@ html, body {
   box-sizing: inherit;
 }
 
-/* ===== NAVBAR ===== */
 .nav {
   position: sticky;
   top: 0;
@@ -70,7 +69,6 @@ html, body {
   color: var(--amber);
 }
 
-/* ===== LANDING PAGE ===== */
 .landing-container {
   min-height: 100vh;
   display: flex;
@@ -136,7 +134,6 @@ html, body {
   background: var(--gold);
 }
 
-/* ===== HERO CARDS ===== */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -179,7 +176,6 @@ html, body {
   padding: 1rem;
 }
 
-/* ===== DETAILS PAGE ===== */
 .details {
   background: var(--glass);
   border-radius: 20px;
@@ -200,7 +196,6 @@ h1 {
   text-align: left;
 }
 
-/* ===== TABS ===== */
 .tabs {
   display: flex;
   justify-content: flex-start;
@@ -271,7 +266,6 @@ iframe {
   margin-top: 1rem;
 }
 
-/* ===== MEDIA QUERIES ===== */
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
@@ -297,7 +291,6 @@ iframe {
   }
 }
 
-/* ===== DESKTOP CONTAINER FIXES ===== */
 .container,
 .details {
   width: 100%;
@@ -310,29 +303,23 @@ iframe {
   padding: 3rem 2rem;
 }
 
-/* Smooth tab behavior */
 .tab-content > * {
   max-width: 100%;
   box-sizing: border-box;
 }
 
-/* ===== FINAL ALIGNMENT + HEIGHT FIXES ===== */
-
-/* Keep first (hero) container natural height */
 .container:first-of-type {
   height: auto !important;
   align-items: flex-start !important;
   justify-content: flex-start !important;
 }
 
-/* Prevent hero image from stretching */
 .container:first-of-type .hero-card img {
   height: auto !important;
   max-height: 400px;
   object-fit: cover;
 }
 
-/* Left-align everything in details */
 .details h1,
 .details p,
 .details .tabs,
@@ -341,7 +328,6 @@ iframe {
   text-align: left !important;
 }
 
-/* Ensure details content stays left-aligned */
 .details {
   align-items: flex-start !important;
   justify-content: flex-start !important;
