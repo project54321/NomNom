@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background: var(--cream);
@@ -21,174 +22,6 @@ body {
   line-height: 1.6;
 }
 
-.nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--glass);
-  backdrop-filter: blur(10px);
-  padding: 0.8rem 2rem;
-  box-shadow: var(--shadow);
-}
-.logo {
-  font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--brown);
-}
-.logo span {
-  color: var(--amber);
-}
-
-.landing-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5rem;
-}
-.landing-main {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 2rem;
-}
-.search-card {
-  background: var(--glass);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  padding: 2rem;
-  text-align: center;
-  max-width: 420px;
-  width: 100%;
-}
-.search-card h1 {
-  font-family: "Playfair Display", serif;
-  color: var(--brown);
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-.search-form {
-  display: flex;
-  gap: 0.5rem;
-  margin: 1rem 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.search-input {
-  flex: 1 1 200px;
-  padding: 0.7rem 1rem;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-.search-button {
-  padding: 0.7rem 1.2rem;
-  border-radius: 12px;
-  border: none;
-  background: var(--amber);
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.search-button:hover {
-  background: var(--gold);
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  padding: 3rem 5%;
-}
-.hero-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-}
-
-.hero-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.hero-card:hover img {
-  transform: scale(1.1);
-}
-
-.hero-info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: var(--glass-mini);
-  backdrop-filter: blur(6px);
-  padding: 1rem;
-}
-.details {
-  background: var(--glass);
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  padding: 2rem;
-}
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  color: var(--brown);
-}
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.tab {
-  background: var(--glass-mini);
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 12px;
-  font-weight: 500;
-  cursor: pointer;
-}
-.tab.active {
-  background: var(--amber);
-  color: #fff;
-}
-.tab-content {
-  display: none;
-  opacity: 0;
-  transition: all 0.3s;
-}
-.tab-content.active-tab {
-  display: block;
-  opacity: 1;
-  margin-top: 1rem;
-}
-.ingredients-list {
-  list-style: none;
-  padding-left: 1rem;
-}
-iframe {
-  width: 100%;
-  height: 300px;
-  border-radius: 12px;
-  margin-top: 1rem;
-}
-
-/* NAVBAR */
 .nav {
   position: sticky;
   top: 0;
@@ -230,7 +63,134 @@ iframe {
   color: var(--amber);
 }
 
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.landing-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.search-card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.search-card h1 {
+  font-family: "Playfair Display", serif;
+  color: var(--brown);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-input {
+  flex: 1 1 200px;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  border: none;
+  background: var(--amber);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background: var(--gold);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  padding: 3rem 5%;
+}
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.hero-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.hero-card:hover img {
+  transform: scale(1.1);
+}
+
+.hero-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--glass-mini);
+  backdrop-filter: blur(6px);
+  padding: 1rem;
+}
+
+.details {
+  background: var(--glass);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: var(--brown);
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
 .tab {
+  flex: 1 1 auto;
+  text-align: center;
   background: var(--amber);
   border: none;
   padding: 0.5rem 1rem;
@@ -239,15 +199,52 @@ iframe {
   color: white;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;
+  min-width: 60px;
 }
 
 .tab:hover {
   background: var(--gold);
 }
 
+.tab.active {
+  background: var(--gold);
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.tab-content.active-tab {
+  display: block;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
 
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .tab {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
   }
 }
