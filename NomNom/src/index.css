@@ -203,6 +203,8 @@ h1 {
   gap: 0.5rem;
   padding: 1rem 0;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .tab {
@@ -211,7 +213,7 @@ h1 {
   text-align: center;
   background: var(--amber);
   border: none;
-  padding: 0.5rem 0.6rem;
+  padding: 0.5rem 0.4rem;
   border-radius: 10px;
   font-weight: 600;
   color: white;
@@ -219,6 +221,8 @@ h1 {
   transition: 0.3s;
   white-space: nowrap;
   font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tab:hover {
@@ -262,20 +266,20 @@ iframe {
 
   .tab {
     font-size: 0.85rem;
-    padding: 0.4rem 0.5rem;
+    padding: 0.4rem 0.4rem;
   }
 }
 
 @media (max-width: 600px) {
   .tab {
     font-size: 0.75rem;
-    padding: 0.3rem 0.4rem;
+    padding: 0.3rem 0.3rem;
   }
 }
 
 @media (max-width: 400px) {
   .tab {
     font-size: 0.65rem;
-    padding: 0.25rem 0.3rem;
+    padding: 0.25rem 0.25rem;
   }
 }
