@@ -1,4 +1,3 @@
-/* GLOBAL RESET */
 :root {
   --gold: #f3c27b;
   --amber: #e8a95b;
@@ -199,25 +198,26 @@ h1 {
 /* TABS */
 .tabs {
   display: flex;
-  gap: 0.5rem;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
   padding: 1rem 0;
+  width: 100%;
 }
 
 .tab {
-  flex: 0 0 auto;
+  flex: 1 1 0;
+  min-width: 0;
   text-align: center;
   background: var(--amber);
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.6rem;
   border-radius: 10px;
   font-weight: 600;
   color: white;
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
-  min-width: 60px;
 }
 
 .tab:hover {
@@ -258,11 +258,16 @@ iframe {
   .container {
     grid-template-columns: 1fr;
   }
+
+  .tab {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.5rem;
+  }
 }
 
 @media (max-width: 500px) {
   .tab {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.4rem;
   }
 }
